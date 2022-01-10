@@ -10,6 +10,7 @@ def time():# Define the clock Specs - 12 Hour, Minute, And AM or PM #
     string=strftime('%I:%M %p')
     label.config(text=string)
     label.after(1000, time)
+ # Must Install ds-digital font in order to get that digital clock look#
  # Digital Font and Color of the Time #
 label=Label(root, font=('ds-digital', 80), background='black', foreground='red')
 label.pack(anchor='center')
